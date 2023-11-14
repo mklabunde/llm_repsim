@@ -1,0 +1,4 @@
+local: true
+root_dir: ""
+reps_subdir: data/representations/llm-7b-eval
+results_subdir: results

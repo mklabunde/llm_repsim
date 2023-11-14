@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - storage: local-llmeval
+  - measures: ot+is
+  - strategy: final_token
+
+filter:
+  # These all act on both parts of a pair
+  must_contain_all: ["zero-shot"] # List of strings. Compared representations have all these in their filename. If empty, will be ignored.
+  must_contain_any: [] # List of strings. Compared representations have at least one of these in their filename. If empty, will be ignored.
+  must_not_contain: [] # List of strings. Compared representations have none of these in their filename. If empty, will be ignored.
+  # These all check whether it is true for at least one of the parts of a pair
+  one_must_contain: []
+recompute: false

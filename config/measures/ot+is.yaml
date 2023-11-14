@@ -1,0 +1,21 @@
+- _target_: llmcomp.measures.utils.Pipeline
+  preprocess_funcs:
+    - _target_: llmcomp.measures.utils.normalize_matrix_norm
+      _partial_: true
+  similarity_func:
+    _target_: llmcomp.measures.orthogonal_procrustes
+    _partial_: true
+
+- _target_: llmcomp.measures.aligned_cossim
+  _partial_: true
+
+- _target_: llmcomp.measures.rsm_norm_diff
+  _partial_: true
+  inner: cosine
+
+- _target_: llmcomp.measures.utils.Pipeline
+  preprocess_funcs: []
+  similarity_func:
+    _target_: llmcomp.measures.jaccard_similarity
+    _partial_: true
+    k: 10
