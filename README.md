@@ -2,6 +2,8 @@
 
 This is the code for our extended abstract at the UniReps Workshop at NeurIPS 2023: "Towards Measuring Representational Similarity of Large Language Models".
 
+[[arXiv]](https://arxiv.org/abs/2312.02730)
+
 Our data is available on Zenodo: https://doi.org/10.5281/zenodo.8411089
 
 
